@@ -1,0 +1,15 @@
+void main() {
+final cities=['Dhaka','Gazipur','Tangail','Mymansing','Chitagong']
+;
+  for (int i=0; i<cities.length;i++){
+    print(cities[i].toUpperCase());
+  }
+  
+//   when need to  access every item of collection we use inhance for loop below like
+  
+  for (String city in cities ){
+    
+    print(city.toUpperCase());
+  }
+    
+  }
