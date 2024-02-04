@@ -1,0 +1,65 @@
+void main() {
+  
+  
+  int   mark=150;
+  // 90 to 100 -A+
+  // 80 to 89 - A-
+  // 70 to 79 - A
+  // 60 to 69 - B
+  // 50 to 59 - B- 
+  // 40 to 49 - C
+  // 33 to 39 - D
+  
+  if(mark>=90 && mark <100){
+    
+    print('A+');
+  } else if(mark>=80 && mark <=89){
+     print('A-');
+  }
+  else if(mark>=70 && mark <=79){
+     print('A');
+  }
+    else if(mark>=60 && mark <=69){
+     print('B');
+  }
+    else if(mark>=50 && mark <=59){
+     print('B-');
+  }
+    else if(mark>=40 && mark <=49){
+     print('C');
+  }
+    else if(mark>=33 && mark <=39){
+     print('D');
+  }
+   
+  else {
+    
+    print('F');
+  }
+  
+  
+  int factor=mark~/10;
+  if (factor==3){
+   int modulas=mark%10;
+    if(30+modulas>=33){
+      factor=3;
+    }else{
+      factor=0;
+    }
+    
+  }
+  switch(factor){
+      case 10:
+      case 9:
+      print('A+');
+      break;
+      case 8: 
+        print('A-');
+      break;
+      case 3: 
+        print('D');
+      break;
+      default:
+      print('F');
+  }
+}
